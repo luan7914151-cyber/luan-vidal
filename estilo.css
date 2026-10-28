@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    background: #e8e8e8;
+    color: #24352c;
+    font-family: Arial, sans-serif;
+}
+
+.urna {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cabecalho {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin: 0 0 10px;
+    color: #17326b;
+}
+
+.cabecalho p:last-child {
+    margin: 0;
+}
+
+.etiqueta {
+    margin: 0 0 8px;
+    color: #00ffea;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.painel {
+    margin-bottom: 20px;
+    padding: 25px;
+    background: rgb(15, 193, 199);
+    border-radius: 10px;
+}
+
+.painel-topo {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0;
+    color: #176b45;
+}
+
+.status {
+    height: fit-content;
+    padding: 7px 10px;
+    color: #6dd8a8;
+    background: #e2f1e8;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #b9c9bf;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.botao {
+    padding: 12px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao-principal {
+    color: white;
+    background: #176b45;
+}
+
+.botao-principal:hover {
+    background: #104b30;
+}
+
+.botao:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.mensagem {
+    min-height: 20px;
+    margin: 12px 0 0;
+    color: #176b45;
+    font-weight: bold;
+}
+
+.chapas {
+    display: grid;
+    gap: 12px;
+}
+
+.chapa {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #d7dfd9;
+    border-radius: 8px;
+}
+
+.numero {
+    display: grid;
+    width: 45px;
+    height: 45px;
+    flex: 0 0 45px;
+    place-items: center;
+    color: white;
+    background: #176b45;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.dados-chapa {
+    flex: 1;
+}
+
+.dados-chapa h3 {
+    margin: 0 0 5px;
+    color: #176b45;
+}
+
+.dados-chapa p {
+    margin: 0;
+    color: #607267;
+}
+
+@media (max-width: 560px) {
+    .painel {
+        padding: 20px;
+    }
+
+    .painel-topo,
+    .chapa {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .chapa .botao {
+        width: 100%;
+    }
+}
